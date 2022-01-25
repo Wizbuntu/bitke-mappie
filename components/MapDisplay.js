@@ -132,7 +132,7 @@ function MapDisplay({ metaDataList }) {
 
           </div>
         </div>
-      </PureModal>;
+      </PureModal>
 
     </div>
   )

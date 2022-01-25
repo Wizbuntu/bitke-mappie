@@ -5,24 +5,11 @@ import style from "../styles/Home.module.css"
 // layout
 import Layout from "../components/Layout"
 
-// link
-import Link from "next/link";
-
-// Head
-import Head from "next/head"
-
 // dynamic
 import dynamic from "next/dynamic"
 
-// metaData
-// import metaDatas from '../data/metadata.json'
-
-// categories
-// import categories from '../data/categories.json'
-
 // useCategories
 import useCategories from '../hook/useCategory';
-
 
 // useMetaData
 import useMetaData from '../hook/useMetaData';
@@ -48,6 +35,14 @@ function Home() {
     }), []);
 
 
+    // dynamically reportMapDisplay
+    const ReportingMapDisplay = useMemo(() => dynamic(() => import("../components/ReportingMapDisplay"), {
+        loading: () => <p>Loading...</p>,
+        ssr: false
+    }), [])
+
+
+
     // init useEffect
     useEffect(() => {
         // check if error
@@ -71,7 +66,7 @@ function Home() {
             // copy metaDatas
             const _metaDatas = [...metaDatas.data]
 
-            
+
             // filter metadata by categoryId
             const categoryMetaData = _metaDatas.filter((data) => data.categoryId === categoryId)
 
@@ -175,6 +170,34 @@ function Home() {
                                 </div>
                             </>
                             }
+                        </div>
+                    </section>
+
+
+
+
+                    {/* Reporting section */}
+                    <section className="section section-header text-dark pb-md-5 pt-5">
+                        <div className="container pt-4 pb-5">
+                            <div className="row justify-content-center">
+                                <div className="col-12 col-md-12 text-center ">
+                                    <h1 className="display-6 font-weight-bolder mb-4">
+                                        Real-time event reporting
+                                    </h1>
+                                    <p className="lead mb-4 mb-lg-5 lh-3">
+                                        Report events in real time
+                                    </p>
+
+                                </div>
+
+
+                                <div className="col-12 col-md-7 ps-1 ps-md-0 pe-1 mt-3 mt-md-0">
+
+                                    <ReportingMapDisplay metaDataList={filteredMetaData} />
+
+                                </div>
+
+                            </div>
                         </div>
                     </section>
                 </main>
