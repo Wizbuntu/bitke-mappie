@@ -41,9 +41,6 @@ function MapDisplay({ metaDataList }) {
   })
 
 
-  // modal state
-  const [modal, setModal] = useState(false);
-
   // init selectedMetaData state 
   const [selectedMetaData, setSelectedMetaData] = useState({})
 
@@ -124,27 +121,6 @@ function MapDisplay({ metaDataList }) {
           </div>
         </div>
       </div>
-
-
-      {/* modal */}
-      <PureModal
-        header={selectedMetaData.country}
-        footer={
-          <div className="text-end">
-            <button className="btn btn-secondary" onClick={() => setModal(false)}>Close</button>
-          </div>
-        }
-        width={"100%"}
-        isOpen={modal}
-        closeButton="X"
-        closeButtonPosition="header"
-        onClose={() => {
-          setModal(false);
-          return true;
-        }}
-      >
-
-      </PureModal>
 
     </div>
   )
