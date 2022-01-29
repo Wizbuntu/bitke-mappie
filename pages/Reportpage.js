@@ -75,3 +75,7 @@ function Reportpage() {
         </div>
     )
 }
+
+
+
+export default Reportpage
