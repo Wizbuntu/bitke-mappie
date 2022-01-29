@@ -120,7 +120,7 @@ function Digitalmedia() {
                         <div className={style.eduContent}>
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="ether.jpg" class="card-img-top" alt="..." />
+                                    <img src="ether.jpg" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -135,7 +135,7 @@ function Digitalmedia() {
 
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="nft.jpg" class="card-img-top" alt="..." />
+                                    <img src="nft.jpg" className="card-img-top" alt="..." />
                                 </div>
                                 <div className="card-body">
                                     <p className="card-text fw-bold">How to Connect Your MetaMask to OpenSea to Buy and Mint NFTs  </p>
@@ -150,7 +150,7 @@ function Digitalmedia() {
 
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="defi.jpg" class="card-img-top" alt="..." />
+                                    <img src="defi.jpg" className="card-img-top" alt="..." />
                                 </div>
                                 <div className="card-body">
                                     <p className="card-text fw-bold">Defining DeFi: Breaking Down DeFi and Yield Farming with the CEO of SaBi - African Crypto Exchange</p>
@@ -213,7 +213,7 @@ function Digitalmedia() {
                         <div className={style.eduContent}>
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="sankore.jpg" class="card-img-top" alt="..." />
+                                    <img src="sankore.jpg" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -229,7 +229,7 @@ function Digitalmedia() {
 
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="scam.jpg" class="card-img-top" alt="..." />
+                                    <img src="scam.jpg" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -251,7 +251,7 @@ function Digitalmedia() {
                         <div className={style.eduContent}>
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="mobilemoney.jpg" class="card-img-top" alt="..." />
+                                    <img src="mobilemoney.jpg" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -267,7 +267,7 @@ function Digitalmedia() {
 
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="mpesa.png" class="card-img-top" alt="..." />
+                                    <img src="mpesa.png" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -289,7 +289,7 @@ function Digitalmedia() {
                         <div className={style.eduContent}>
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="smart contract.jpg" class="card-img-top" alt="..." />
+                                    <img src="smart contract.jpg" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">
@@ -305,7 +305,7 @@ function Digitalmedia() {
 
                             <div className="card">
                                 <div className="ratio ratio-16x9">
-                                    <img src="audiences.png" class="card-img-top" alt="..." />
+                                    <img src="audiences.png" className="card-img-top" alt="..." />
                                 </div>
 
                                 <div className="card-body">

@@ -17,10 +17,10 @@ function Mktassess() {
                       </p>
                     <div className={style.eduContent}>
                         <div className="card" >
-                            <div class="card-body">
-                                <h5 class="card-title">Market Entry/Assessments </h5>
+                            <div className="card-body">
+                                <h5 className="card-title">Market Entry/Assessments </h5>
 
-                                <p class="card-subtitle mb-2 text-muted">We provide our clients with top-notch insights into the market intelligence
+                                <p className="card-subtitle mb-2 text-muted">We provide our clients with top-notch insights into the market intelligence
                                  and relevant use cases across the ecosystem. We have been part of enabling market entry to some
                                  of the top tier clients in the industry.</p>
 
@@ -30,32 +30,32 @@ function Mktassess() {
 
 
                         <div className="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Brand Positioning </h5>
-                                <p class="card-subtitle mb-2 text-muted">We center the needs of your brand visibility in sync with
+                            <div className="card-body">
+                                <h5 className="card-title">Brand Positioning </h5>
+                                <p className="card-subtitle mb-2 text-muted">We center the needs of your brand visibility in sync with
                                 your positioning strategy with the goal of successful business permanence in the various ecosystems.   </p>
-                                <p class="card-text">Example: We’ve influenced the visibility of a number of initiatives including African homegrown initiatives. Some of them include:</p>
-                                <a href="https://bitcoinke.io/2021/11/the-inspiring-story-of-wakanda-inu/" class="card-link link-warning card-text">Wakanda Inu </a>
-                                <a href="https://bitcoinke.io/2021/10/bitmama-closes-pre-seed-funding-round/" class="card-link link-warning card-text">Bitmama</a><br />
-                                <a href="https://bitcoinke.io/2020/09/trust-graphic-novel-trailer/" class="card-link link-warning card-text">A comic about blockchain</a>
+                                <p className="card-text">Example: We’ve influenced the visibility of a number of initiatives including African homegrown initiatives. Some of them include:</p>
+                                <a href="https://bitcoinke.io/2021/11/the-inspiring-story-of-wakanda-inu/" className="card-link link-warning card-text">Wakanda Inu </a>
+                                <a href="https://bitcoinke.io/2021/10/bitmama-closes-pre-seed-funding-round/" className="card-link link-warning card-text">Bitmama</a><br />
+                                <a href="https://bitcoinke.io/2020/09/trust-graphic-novel-trailer/" className="card-link link-warning card-text">A comic about blockchain</a>
                             </div>
 
 
                         </div>
 
                         <div className="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Digital Marketing</h5>
-                                <p class="card-subtitle mb-2 text-muted">Simply stated, we get results. Whether you are looking for more website traffic, more leads, more sales, more social followers, higher engagement rates, higher email open rates … whatever your needs – we get it done. Guaranteed.</p>
+                            <div className="card-body">
+                                <h5 className="card-title">Digital Marketing</h5>
+                                <p className="card-subtitle mb-2 text-muted">Simply stated, we get results. Whether you are looking for more website traffic, more leads, more sales, more social followers, higher engagement rates, higher email open rates … whatever your needs – we get it done. Guaranteed.</p>
 
                             </div>
                         </div>
 
                         <div className="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Blog Coverage</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">Blog Coverage</h5>
 
-                                <p class="card-subtitle mb-2 text-muted">Our widely read <a href="" className="link-warning">blog</a> offers you a platform to showcase your products and services, either via band ads, features, including video walkthroughs.</p>
+                                <p className="card-subtitle mb-2 text-muted">Our widely read <a href="" className="link-warning">blog</a> offers you a platform to showcase your products and services, either via band ads, features, including video walkthroughs.</p>
 
                             </div>
 
@@ -64,15 +64,15 @@ function Mktassess() {
 
 
                         <div className="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Training/Education for Consumer Awareness and Market </h5>
+                            <div className="card-body">
+                                <h5 className="card-title">Training/Education for Consumer Awareness and Market </h5>
 
-                                <p class="card-subtitle mb-2 text-muted">Our unique strategies and approaches on consumer awareness and education continue to play a very instrumental role in unlocking Africa’s blockchain potential.</p>
+                                <p className="card-subtitle mb-2 text-muted">Our unique strategies and approaches on consumer awareness and education continue to play a very instrumental role in unlocking Africa’s blockchain potential.</p>
                                 <p className="card-text">We provide:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item card-text">A platform for budding developers, traders and investors to nurture their skills and talents</li>
-                                    <li class="list-group-item card-text">Opportunities for potential partners to collaborate with BitKE in equipping this platform with the necessary support required</li>
-                                    <li class="list-group-item card-text">Tailor-made solutions to various target audiences and/or as part of your market entry planning. Some of them include product launches and activations.</li>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item card-text">A platform for budding developers, traders and investors to nurture their skills and talents</li>
+                                    <li className="list-group-item card-text">Opportunities for potential partners to collaborate with BitKE in equipping this platform with the necessary support required</li>
+                                    <li className="list-group-item card-text">Tailor-made solutions to various target audiences and/or as part of your market entry planning. Some of them include product launches and activations.</li>
                                 </ul>
 
                             </div>
@@ -80,21 +80,21 @@ function Mktassess() {
 
 
                         <div className="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Consumer engagement </h5>
-                                <p class="card-subtitle mb-2 text-muted">At BitKe, we prioritize public engagement across the board.
+                            <div className="card-body">
+                                <h5 className="card-title">Consumer engagement </h5>
+                                <p className="card-subtitle mb-2 text-muted">At BitKe, we prioritize public engagement across the board.
                                 We leverage on this by offering our clients:</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item card-text">Featured Posts;</li>
-                                    <li class="list-group-item card-text">Email Newsletters Sponsored </li>
-                                    <li class="list-group-item card-text">Community management;  </li>
-                                    <li class="list-group-item card-text">Web Banners </li>
-                                    <li class="list-group-item card-text">Social Media Promotions and Mentions </li>
-                                    <li class="list-group-item card-text">Video Promos </li>
-                                    <li class="list-group-item card-text">Events Organizing &amp; Management </li>
-                                    <li class="list-group-item card-text">Talent and influencer engagement,  </li>
-                                    <li class="list-group-item card-text">Multicultural outreach and </li>
-                                    <li class="list-group-item card-text">Content creation and distribution across all platforms and channels to earn attention for your brand/product. </li>
+                                <ul className="list-group list-group-flush">
+                                    <li className="list-group-item card-text">Featured Posts;</li>
+                                    <li className="list-group-item card-text">Email Newsletters Sponsored </li>
+                                    <li className="list-group-item card-text">Community management;  </li>
+                                    <li className="list-group-item card-text">Web Banners </li>
+                                    <li className="list-group-item card-text">Social Media Promotions and Mentions </li>
+                                    <li className="list-group-item card-text">Video Promos </li>
+                                    <li className="list-group-item card-text">Events Organizing &amp; Management </li>
+                                    <li className="list-group-item card-text">Talent and influencer engagement,  </li>
+                                    <li className="list-group-item card-text">Multicultural outreach and </li>
+                                    <li className="list-group-item card-text">Content creation and distribution across all platforms and channels to earn attention for your brand/product. </li>
                                    
                                 </ul>
                             </div>
@@ -103,7 +103,7 @@ function Mktassess() {
 
                     </div>
                         <div className={style.subtext} >
-                        <h1 class="card-title text-start" id="audience">For Audiences</h1>
+                        <h1 className="card-title text-start" id="audience">For Audiences</h1>
                       <h4 className="text-start">We offer Cryptocurrency Education</h4>
                       </div>
                          <p className="lead">For many people in this landscape, their first interaction with blockchain/cryptocurrency begins with BitKE and its community. We offer regular free trainings on relevant topics.

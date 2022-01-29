@@ -7,14 +7,14 @@ import { IconContext } from "react-icons";
 function Footer(){
     return(
         <div>
-            <footer class="footer">
-    <div class="container">
-        <div class="row pt-5 mt-5">
-            <div class="col-md-5 pb-5">
+            <footer className="footer">
+    <div className="container">
+        <div className="row pt-5 mt-5">
+            <div className="col-md-5 pb-5">
                 <h5><img src="logo.svg"></img></h5>
-                <div class="row">
-                    <div class="col-6">
-                    <h5 class="text-md-left">Lets Connect</h5>
+                <div className="row">
+                    <div className="col-6">
+                    <h5 className="text-md-left">Lets Connect</h5>
                 <p>Plan your future and take the next step now</p>
                 <p className="fw-bold">Email: info@bitke.io</p>
                     </div>
@@ -29,22 +29,22 @@ function Footer(){
                    
                 </div>
             </div>
-            <div class="col-md-2">
-                {/* <h5 class="text-md-left">Lets Connect</h5>
+            <div className="col-md-2">
+                {/* <h5 className="text-md-left">Lets Connect</h5>
                 <p>Plan your future and take the next step now</p>
                 <br /> */}
             </div>
-            <div class="col-md-5">
+            <div className="col-md-5">
                 <form>
-                <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email" />
+                <div className="form-group">
+                <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="email" />
                  </div>
 
-                    <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
+                    <div className="form-group">
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="message"></textarea>
                 </div>
-                    <fieldset class="form-group text-xs-right">
-                        <button type="button" class="btn btn-light btn-md">Send</button>
+                    <fieldset className="form-group text-xs-right">
+                        <button type="button" className="btn btn-light btn-md">Send</button>
                     </fieldset>
                 </form>
             </div>

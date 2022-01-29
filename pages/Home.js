@@ -255,18 +255,18 @@ function Home() {
 
                                     <div className={style.media}>
                                         <div className="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">For Clients</h5>
+                                            <div className="card-body">
+                                                <h5 className="card-title">For Clients</h5>
 
-                                                <p class="card-subtitle mb-2 text-muted lead">We pride ourselves in our flexibility and can certainly
+                                                <p className="card-subtitle mb-2 text-muted lead">We pride ourselves in our flexibility and can certainly
                                                 tailor a package specific to your needs. <a href="/Mktassess/#clients" className="link-warning">Read more….</a></p>
                                             </div>
                                         </div>
 
                                         <div className="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title">For Audiences</h5>
-                                                <p class="card-subtitle mb-2 text-muted lead">We offer Cryptocurrency Education. <br /> <a href="/Mktassess/#audience" className="link-warning">Read more…</a></p>
+                                            <div className="card-body">
+                                                <h5 className="card-title">For Audiences</h5>
+                                                <p className="card-subtitle mb-2 text-muted lead">We offer Cryptocurrency Education. <br /> <a href="/Mktassess/#audience" className="link-warning">Read more…</a></p>
                                             </div>
                                         </div>
                                     </div>

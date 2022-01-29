@@ -71,13 +71,13 @@ function Navigation() {
                 <li className="nav-item pt-1 dropdown">
                   <a className="nav-link  dropdown-toggle active"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/About">Media</a>
 
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/Digitalmedia">Media</a>
+            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="/Digitalmedia">Media</a>
             </li>
-            <li><a class="dropdown-item"  href="/Mktassess">PR and Marketing</a>
+            <li><a className="dropdown-item"  href="/Mktassess">PR and Marketing</a>
             </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="/Report">Reports</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="/Report">Reports</a></li>
           </ul>
                 </li>
 
