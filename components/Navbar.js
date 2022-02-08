@@ -68,6 +68,9 @@ function Navigation() {
                 <li className="nav-item pt-1">
                   <a className="nav-link active" aria-current="page" href="/About">About</a>
                 </li>
+                <li className="nav-item pt-1">
+                  <a className="nav-link active" aria-current="page" href="/ReportMap">Submit a Company</a>
+                </li>
                 <li className="nav-item pt-1 dropdown">
                   <a className="nav-link  dropdown-toggle active"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/About">Media</a>
 
