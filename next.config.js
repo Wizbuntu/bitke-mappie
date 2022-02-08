@@ -7,6 +7,6 @@ module.exports = {
         ignoreDuringBuilds: true,
     },
     env: {
-        API_ROOT: 'http://localhost:7000/v1/api'
+        API_ROOT: 'https://adminserver.bitke.io/v1/api'
     }
 }

@@ -41,22 +41,22 @@ function MapDisplay({ metaDataList }) {
   })
 
 
-  // modal state
-  const [modal, setModal] = useState(false);
-
   // init selectedMetaData state 
   const [selectedMetaData, setSelectedMetaData] = useState({})
+
+
+
 
   // init openModal function
   const openModal = (data) => {
 
     console.log(data)
 
-    // update selectedData state 
+    // update selectedMetaData
     setSelectedMetaData(data)
 
     // open Modal
-    setModal(true)
+    // setModal(true)
 
   }
 
@@ -81,7 +81,7 @@ function MapDisplay({ metaDataList }) {
               <small className="text-center tooltip-text">{data.categoryName}</small>
               <h6 className="text-center fw-bold tooltip-text">{data._metaTotal}</h6>
               <div className="text-center">
-                <a className="text-center fw-bold tooltip-text" style={{ cursor: "pointer" }} onClick={() => openModal(data)}>View</a>
+                <a className="text-center fw-bold tooltip-text" style={{ cursor: "pointer" }} data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onClick={() => openModal(data)}>View</a>
               </div>
             </Tooltip>
           </Marker>
@@ -90,49 +90,39 @@ function MapDisplay({ metaDataList }) {
       </MapContainer>
 
 
+      <div className="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div className="offcanvas-header">
+          <h5 id="offcanvasRightLabel" className="fs-6">{selectedMetaData.categoryName} in {selectedMetaData.country}</h5>
+          <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div className="offcanvas-body">
+          <div className="container px-2">
+            <div className="row">
+              {selectedMetaData && selectedMetaData._meta && [...selectedMetaData._meta].map((meta, index) => {
+                return <div key={index} className="col-12 col-md-12  mt-2">
+                  <div className="card border-0">
+                    <div className="card-body p-3">
+                      
+                      <h6 className="card-subtitle mb-2 text-muted fw-bold" style={{ fontSize: 15 }}>{Object.values(meta.data)[0]}</h6>
+                      {Object.values(meta.data).slice(1).map((mt, index) => {
+                        return <div key={index}>
+                          {`${mt}`.includes('http') || `${mt}`.includes('www') ? <p><a className="card-text fw-normal mb-3" style={{ fontSize: 15, textDecoration: "underline" }} href={`${mt}`} target="_blank">Read More</a></p> : 
+                          <p className="card-text fw-normal mb-3" style={{ fontSize: 15 }}>{mt}</p>
+                          }
+                          </div>
+                      })}
 
-
-      {/* modal */}
-      <PureModal
-        header={selectedMetaData.country}
-        footer={
-          <div className="text-end">
-            <button className="btn btn-secondary" onClick={() => setModal(false)}>Close</button>
-          </div>
-        }
-        width={"100%"}
-        isOpen={modal}
-        closeButton="X"
-        closeButtonPosition="header"
-        onClose={() => {
-          setModal(false);
-          return true;
-        }}
-      >
-        <div className="container px-2">
-          <div className="row">
-            {selectedMetaData && selectedMetaData._meta && [...selectedMetaData._meta].map((meta, index) => {
-              return <div key={index} className="col-12 col-md-4  mt-2">
-                <div className="card">
-                  <div className="card-body p-3">
-                    {Object.entries(meta.data).map((mt, index) => {
-                      return <div key={index}>
-                        <h6 className="card-subtitle mb-2 text-muted text-truncate fw-bold" style={{ fontSize: 15 }}>{mt[0]}</h6>
-                        <p className="card-text text-truncate fw-normal mb-3" style={{fontSize: 15}}>{mt[1]}</p>
-                      </div>
-                    })}
-
-
+                    </div>
                   </div>
                 </div>
-              </div>
-            })}
+              })}
 
 
 
+            </div>
           </div>
         </div>
-      </PureModal>;
+      </div>
 
     </div>
   )

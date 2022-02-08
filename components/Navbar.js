@@ -63,7 +63,7 @@ function Navigation() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item pt-1">
-                  <a className="nav-link active" aria-current="page" href="#">Home</a>
+                  <Link href="/"><a className="nav-link active" aria-current="page">Home</a></Link>
                 </li>
                 <li className="nav-item pt-1">
                   <a className="nav-link active" aria-current="page" href="#">About</a>
@@ -74,10 +74,10 @@ function Navigation() {
                 </li>
 
                 <li className="nav-item">
-                <a className="btn btn-sm  btn-outline-success" type="submit">Report Event</a>
+                  <Link href="/report"><a className="btn btn-sm  btn-outline-success">Report Event</a></Link>
                 </li>
 
-               
+
               </ul>
 
             </div>

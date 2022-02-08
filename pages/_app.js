@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-
+        <meta charset="utf-8" />
         <title>Bitke</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="title" content="Bitke" />
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
 
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossOrigin="anonymous" />
-      </Head> 
+      </Head>
 
       <Script src="/vendor/popper.js/dist/umd/popper.min.js" strategy="beforeInteractive" />
       <Script src="/vendor/headroom.js/dist/headroom.min.js" strategy="beforeInteractive" />
@@ -40,6 +40,7 @@ function MyApp({ Component, pageProps }) {
       <Script src="https://buttons.github.io/buttons.js" strategy="beforeInteractive" />
 
       <Script src="/assets/js/swipe.js" strategy="beforeInteractive" />
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" strategy="beforeInteractive" />
 
 
 
