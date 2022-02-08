@@ -63,7 +63,7 @@ const ReportDetail = () => {
                         <div className="container pt-4 pb-5">
                             <div className="row justify-content-center">
                                 {reports.length > 0 && reports.map((report, index) => {
-                                    return <div key={index} className="col-12 col-md-10 mt-2">
+                                    return <div key={index} className="col-12 col-md-10 mt-">
                                         <div className="card">
                                             <div className="card-body">
                                                 <h5 className="card-title">{report.title}</h5>

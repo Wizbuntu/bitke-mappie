@@ -103,11 +103,13 @@ function MapDisplay({ metaDataList }) {
                   <div className="card border-0">
                     <div className="card-body p-3">
                       
-                      <h6 className="card-subtitle mb-2 text-muted text-truncate fw-bold" style={{ fontSize: 15 }}>{Object.values(meta.data)[0]}</h6>
+                      <h6 className="card-subtitle mb-2 text-muted fw-bold" style={{ fontSize: 15 }}>{Object.values(meta.data)[0]}</h6>
                       {Object.values(meta.data).slice(1).map((mt, index) => {
                         return <div key={index}>
-                          <p className="card-text text-truncate fw-normal mb-3" style={{ fontSize: 15 }}>{mt}</p>
-                        </div>
+                          {`${mt}`.includes('http') || `${mt}`.includes('www') ? <p><a className="card-text fw-normal mb-3" style={{ fontSize: 15, textDecoration: "underline" }} href={`${mt}`} target="_blank">Read More</a></p> : 
+                          <p className="card-text fw-normal mb-3" style={{ fontSize: 15 }}>{mt}</p>
+                          }
+                          </div>
                       })}
 
                     </div>
