@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta charset="utf-8" />
-        <title>Bitke</title>
+        <title>BitKE</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="title" content="Bitke" />
         <meta name="author" content="Bitke" />
